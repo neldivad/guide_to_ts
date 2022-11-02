@@ -158,7 +158,7 @@ def run():
         vol_minus = vol_minus.dropna() 
 
         st.plotly_chart( make_line_chart(rolling_mean, 'MA mean'), use_container_width=True)
-        st.plotly_chart( make_line_chart(rolling_std, 'MA std + VIX'), use_container_width=True)
+        st.plotly_chart( make_line_chart(rolling_std, 'MA std'), use_container_width=True)
         st.plotly_chart( make_line_chart(tdf_minus, 'Original - MA mean' ), use_container_width=True)
         st.info('If rolling mean and rolling standard deviation is not stable with time, time series is not stationary.')
 
