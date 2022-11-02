@@ -2,3 +2,4 @@ yfinance
 streamlit
 plotly
 statsmodels==0.13.1
+scipy
