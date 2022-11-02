@@ -1,4 +1,4 @@
 yfinance
 streamlit
 plotly
-statsmodel
+statsmodels==0.13.1
