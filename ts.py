@@ -28,7 +28,7 @@ def run():
   
   if 'stocks' not in st.session_state:
     st.info('Data not yet loaded')
-   else:
+  else:
     st.success('Data loaded')
   
   with st.expander('Show data'):
