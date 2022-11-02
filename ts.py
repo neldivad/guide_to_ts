@@ -182,7 +182,7 @@ def run():
         st.info('If ACF plot have downward trending spikes, series is not stationary. After log-diff, ACF spike signals MA(n), PACF spikes signals AR(n)')
 
   with st.expander('Run forecast model'):
-    st.info('Fuck forecasting in Streamlit. Fuck most Python forecasting libraries in general. Difficult to customize and bring up to the front-end')
+    st.info('**** forecasting in Streamlit. **** most Python forecasting libraries in general. Difficult to customize and bring up to the front-end')
     st.error('Dynamic forecasting wastes so much computational resources. Lack of customizibility means delivering low resolution info')
     st.error('Why are you not doing it on Jupyter Notebook?')
       
