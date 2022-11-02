@@ -80,7 +80,7 @@ def run():
         yd = st.selectbox('Select Y data', stocks, index=1)
 
       if st.form_submit_button('Get linear relationship'):
-        sfig = make_scatter_chart( transform_df(df, transform=transform), xdata=xd, ydata=yd, title=f'{xd}-{yd} ({transform})')
+        sfig = make_scatter_chart( transform_df(df, transform=transform), xdata=xd, ydata=yd, title=f'{xd}-{yd} ({transform} transform)')
         st.plotly_chart(sfig, use_container_width=True)
 
         if 'diff' not in transform:
