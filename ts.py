@@ -8,6 +8,7 @@ import numpy as np
 import plotly.express as px
 import plotly.graph_objs as go
 
+
 def run():
   st.header('Guide to forecast')
 
