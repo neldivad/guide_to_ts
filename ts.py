@@ -26,6 +26,11 @@ def run():
       st.session_state['stocks'] = data
     df = st.session_state['stocks']
   
+  if 'stocks' not in st.session_state:
+    st.info('Data not yet loaded')
+   else:
+    st.success('Data loaded')
+  
   with st.expander('Show data'):
     try:
       st.write(df)
