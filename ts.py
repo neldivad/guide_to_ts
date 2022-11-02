@@ -50,9 +50,10 @@ def run():
     st.plotly_chart(fig, use_container_width=True)
 
   ##################
-  def make_scatter_chart(df, xdata, ydata):
+  def make_scatter_chart(df, xdata, ydata, title):
     import plotly.express as px 
     fig = px.scatter(df, x=xdata, y=ydata, trendline='ols', hover_name=df.index)
+    fig.update_layout(title=title)
     return fig 
 
   def transform_df(df, transform='no'):
@@ -79,7 +80,7 @@ def run():
         yd = st.selectbox('Select Y data', stocks, index=1)
 
       if st.form_submit_button('Get linear relationship'):
-        sfig = make_scatter_chart( transform_df(df, transform=transform), xdata=xd, ydata=yd )
+        sfig = make_scatter_chart( transform_df(df, transform=transform), xdata=xd, ydata=yd, title=f'{xd}-{yd} ({transform})')
         st.plotly_chart(sfig, use_container_width=True)
 
         if 'diff' not in transform:
