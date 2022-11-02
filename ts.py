@@ -279,3 +279,8 @@ def make_acf_plot(series, plot_pacf=False):
     height= 300
   )
   return fig
+
+#--------------------
+# Run app
+#--------------------
+run()
