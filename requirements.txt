@@ -1,7 +1,7 @@
 yfinance
 streamlit
 plotly==5.6.0
-statsmodels==0.13.1
+statsmodels==0.13.2
 scipy
 arch
 sklearn
