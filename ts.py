@@ -178,6 +178,7 @@ def run():
         transform2 = st.selectbox('Select data transformation', ['no', 'log', 'logdiff'], key='t2')
       
       if st.form_submit_button('Get ACF plots'):
+        st.wwrite( transform_df( df[ tickersel2 ] )
         acfp = make_acf_plot( transform_df( df[ tickersel2 ], transform=transform2 ), plot_pacf=False)
         pacfp= make_acf_plot( transform_df( df[ tickersel2 ], transform=transform2 ), plot_pacf=True)
         st.plotly_chart(acfp, use_container_width=True)
