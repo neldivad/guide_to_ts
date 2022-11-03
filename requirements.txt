@@ -1,6 +1,6 @@
 yfinance
 streamlit
-plotly
+plotly==5.6.0
 statsmodels==0.13.1
 scipy
 arch
