@@ -236,14 +236,7 @@ def make_acf_plot(series, plot_pacf=False):
   upper_y = corr_array[1][:,1] - corr_array[0]
 
   fig = go.Figure()
-  [
-    fig.add_scatter(
-      x=(x,x),
-      y=(0,corr_array[0][x]), 
-      mode='lines',
-      line_color='#3f3f3f',
-    ) for x in range(len(corr_array[0])) 
-  ]
+  [ fig.add_scatter(x=(x,x), y=(0,corr_array[0][x]), mode='lines', line_color='#3f3f3f') for x in range(len(corr_array[0])) ]
   
   fig.add_scatter(
     x=np.arange(len(corr_array[0])),
