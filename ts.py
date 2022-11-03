@@ -286,7 +286,7 @@ def make_acf_plot(series, plot_pacf=False):
     title=title,
     height= 300
   )
-  return fig
+  return fig 
 
 #--------------------
 # Run app
