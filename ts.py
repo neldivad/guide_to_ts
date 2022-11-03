@@ -164,7 +164,7 @@ def run():
 
         st.plotly_chart( make_line_chart(vol_df, f'Implied Vol vs Actual Vol (Y-axis={axis_scale})'), use_container_width=True)
         st.plotly_chart( make_line_chart(vol_minus, f'Volatility gap (Y-axis={axis_scale})'), use_container_width=True)
-        st.plotly_chart( make_scatter_chart(vol_minus, x=vol_minus.index, y=vol_minus.values, f'Volatility gap (Y-axis={axis_scale})'), use_container_width=True)
+        # st.plotly_chart( make_scatter_chart(vol_minus, x=vol_minus.index, y=vol_minus.values, f'Volatility gap (Y-axis={axis_scale})'), use_container_width=True)
         st.plotly_chart( make_KDE_plot(vol_minus, remove_outliers=False), use_container_width=True )
         st.info('If implied minus actual is above 0, it means traders overpaid for insurance. If below 0, traders are under-insured.')
         st.info('If actual minus conditional is above 0, it means models are too optimistic. If below 0, risk models are too pessimistic.')
